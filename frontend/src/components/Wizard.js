@@ -42,6 +42,7 @@ const Wizard = () => {
   const nextBtnDisabled = () => {
     if (currentStep === 0 && !answer.name.trim()) return true;
     // if (currentStep === steps.length - 1) return true;
+    return false;
   };
 
   return (
